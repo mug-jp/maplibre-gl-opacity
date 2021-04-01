@@ -1,7 +1,7 @@
 # maplibre-gl-opacity 
 
 maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers transparent.  
-[npm](https://www.npmjs.com/package/mapLibre-gl-opacity)  
+[npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
 <br>
 
