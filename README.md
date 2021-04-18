@@ -1,6 +1,7 @@
 # maplibre-gl-opacity 
 
 maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers transparent.  
+[MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js-docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
 <br>
@@ -219,6 +220,7 @@ Copyright (c) 2021 Yasunori Kirimoto
 # maplibre-gl-opacity 
 
 maplibre-gl-opacityは、複数のタイルレイヤーを透過するMapLibre GL JSのプラグインです。   
+[MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js-docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
 <br>
