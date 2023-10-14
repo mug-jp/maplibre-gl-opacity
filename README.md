@@ -1,31 +1,25 @@
-# maplibre-gl-opacity 
+# maplibre-gl-opacity
 
-maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers transparent.  
-[MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js-docs/plugins)  
+maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers transparent.
+
+[MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js/docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
 <br>
 
-Browser Support
-- Chrome
-- Firefox
-- Safari
-
-<br>
-
-## Usage  
+## Usage
 
 ![maplibre-gl-opacity](./img/maplibre-gl-opacity.gif)
 
 <br>
 
-### Demo  
+### Demo
 
-[demo](https://dayjournal.github.io/maplibre-gl-opacity)
+[demo](https://mug-jp.github.io/maplibre-gl-opacity)
 
 <br>
 
-### Option  
+### Option
 
 ```javascript
 // addControl Option
@@ -57,31 +51,21 @@ opacityControl: true
 
 ### Example
 
-Start MapLibre GL JS easily. [MapLibre GL JS, webpack]  
-[maplibregljs-starter](https://github.com/dayjournal/maplibregljs-starter) 
+Start MapLibre GL JS easily. [MapLibre GL JS, Vite]  
+[maplibregljs-starter](https://github.com/mug-jp/maplibregljs-starter)
 
 Install package
 ```bash
 npm install maplibre-gl-opacity
 ```
 
-main.js
-```javascript
-// CSS import
+main.ts
+```typescript
+import './style.css'
 import 'maplibre-gl/dist/maplibre-gl.css';
 import 'maplibre-gl-opacity/dist/maplibre-gl-opacity.css';
-import './css/style.css';
+import maplibregl from 'maplibre-gl';
 
-// JS import
-import './js/script.js';
-```
-
-script.js
-```javascript
-// module import
-import OpacityControl from 'maplibre-gl-opacity';
-
-// MIERUNE MONO
 // module import
 import OpacityControl from 'maplibre-gl-opacity';
 
@@ -205,7 +189,7 @@ map.on('load', function () {
 ## License
 MIT
 
-Copyright (c) 2021 Yasunori Kirimoto
+Copyright (c) 2021-2023  Yasunori Kirimoto
 
 <br>
 
@@ -217,34 +201,28 @@ Copyright (c) 2021 Yasunori Kirimoto
 
 <br>
 
-# maplibre-gl-opacity 
+# maplibre-gl-opacity
 
-maplibre-gl-opacityは、複数のタイルレイヤーを透過するMapLibre GL JSのプラグインです。   
-[MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js-docs/plugins)  
+maplibre-gl-opacityは、複数のタイルレイヤーを透過するMapLibre GL JSのプラグインです。
+
+[MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js/docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
 <br>
 
-対応ブラウザ
-- Chrome
-- Firefox
-- Safari
-
-<br>
-
-## 使用方法  
+## 使用方法
 
 ![maplibre-gl-opacity](./img/maplibre-gl-opacity.gif)
 
 <br>
 
-### デモ  
+### デモ
 
-[デモ](https://dayjournal.github.io/maplibre-gl-opacity)
+[デモ](https://mug-jp.github.io/maplibre-gl-opacity)
 
 <br>
 
-### オプション  
+### オプション
 
 ```javascript
 // addControlのオプション
@@ -276,27 +254,21 @@ opacityControl: true
 
 ### 例
 
-MapLibre GL JSを手軽に始める [MapLibre GL JS, webpack]  
-[maplibregljs-starter](https://github.com/dayjournal/maplibregljs-starter) 
+MapLibre GL JSを手軽に始める [MapLibre GL JS, Vite]  
+[maplibregljs-starter](https://github.com/mug-jp/maplibregljs-starter)
 
 パッケージインストール
 ```bash
 npm install maplibre-gl-opacity
 ```
 
-main.js
-```javascript
-// CSS import
+main.ts
+```typescript
+import './style.css'
 import 'maplibre-gl/dist/maplibre-gl.css';
 import 'maplibre-gl-opacity/dist/maplibre-gl-opacity.css';
-import './css/style.css';
+import maplibregl from 'maplibre-gl';
 
-// JS import
-import './js/script.js';
-```
-
-script.js
-```javascript
 // module import
 import OpacityControl from 'maplibre-gl-opacity';
 
@@ -420,6 +392,6 @@ map.on('load', function () {
 ## ライセンス
 MIT
 
-Copyright (c) 2021 Yasunori Kirimoto
+Copyright (c) 2021-2023 Yasunori Kirimoto
 
 <br>
