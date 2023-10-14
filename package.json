@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/dayjournal/maplibre-gl-opacity/issues"
   },
-  "homepage": "https://github.com/dayjournal/maplibre-gl-opacity#readme"
+  "homepage": "https://github.com/dayjournal/maplibre-gl-opacity#readme",
+  "scripts": {
+    "minify:js": "terser src/maplibre-gl-opacity.js -o dist/maplibre-gl-opacity.js",
+    "minify:css": "cleancss src/maplibre-gl-opacity.css -o dist/maplibre-gl-opacity.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.21.0"
+  }
 }
