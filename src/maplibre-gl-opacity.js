@@ -43,7 +43,8 @@ class OpacityControl {
             });
         });
         // レイヤ名追加
-        const layerName = document.createElement('span');
+        const layerName = document.createElement('label');
+        layerName.htmlFor = layerId;
         layerName.appendChild(document.createTextNode(this._baseLayersOption[layerId]));
         this._container.appendChild(layerName);
     }
@@ -67,7 +68,8 @@ class OpacityControl {
             }
         });
         // レイヤ名追加
-        const layerName = document.createElement('span');
+        const layerName = document.createElement('label');
+        layerName.htmlFor = layerId;
         layerName.appendChild(document.createTextNode(this._overLayersOption[layerId]));
         this._container.appendChild(layerName);
     }
