@@ -189,7 +189,7 @@ map.on('load', function () {
 ## License
 MIT
 
-Copyright (c) 2021-2023  Yasunori Kirimoto
+Copyright (c) 2021-2024  Yasunori Kirimoto
 
 <br>
 
@@ -392,6 +392,6 @@ map.on('load', function () {
 ## ライセンス
 MIT
 
-Copyright (c) 2021-2023 Yasunori Kirimoto
+Copyright (c) 2021-2024 Yasunori Kirimoto
 
 <br>
