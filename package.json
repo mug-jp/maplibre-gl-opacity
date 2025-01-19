@@ -2,7 +2,17 @@
     "name": "maplibre-gl-opacity",
     "version": "1.7.0",
     "description": "maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers transparent.",
-    "main": "build/maplibre-gl-opacity.mjs",
+    "files": [
+        "build"
+    ],
+    "main": "build/maplibre-gl-opacity.umd.js",
+    "module": "build/maplibre-gl-opacity.mjs",
+    "exports": {
+        ".": {
+            "import": "./build/maplibre-gl-opacity.mjs",
+            "require": "./build/maplibre-gl-opacity.umd.js"
+        }
+    },
     "types": "build/maplibre-gl-opacity.d.ts",
     "repository": {
         "type": "git",
