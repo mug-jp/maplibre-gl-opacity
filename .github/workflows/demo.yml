@@ -1,0 +1,37 @@
+name: github pages
+
+on:
+    push:
+        branches:
+            - master
+        paths:
+            - 'src/**'
+            - 'example/**'
+    workflow_dispatch:
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-24.04
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+                  cache: 'pnpm'
+
+            - name: install
+              run: pnpm install
+
+            - name: build
+              run: pnpm build
+
+            - name: add nojekyll
+              run: touch ./demo/.nojekyll
+
+            - name: deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./demo

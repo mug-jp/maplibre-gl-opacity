@@ -5,19 +5,13 @@ maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers t
 [MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js/docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
-<br>
-
 ## Usage
 
 ![maplibre-gl-opacity](./img/maplibre-gl-opacity.gif)
 
-<br>
-
 ### Demo
 
 [demo](https://mug-jp.github.io/maplibre-gl-opacity)
-
-<br>
 
 ### Option
 
@@ -47,23 +41,21 @@ overLayers: {
 opacityControl: true
 ```
 
-<br>
-
 ### Example
 
 Start MapLibre GL JS easily. [MapLibre GL JS, Vite]  
 [maplibregljs-starter](https://github.com/mug-jp/maplibregljs-starter)
 
 Install package
+
 ```bash
 npm install maplibre-gl-opacity
 ```
 
 main.ts
+
 ```typescript
-import './style.css'
 import 'maplibre-gl/dist/maplibre-gl.css';
-import 'maplibre-gl-opacity/dist/maplibre-gl-opacity.css';
 import maplibregl from 'maplibre-gl';
 
 // module import
@@ -184,22 +176,15 @@ map.on('load', function () {
 });
 ```
 
-<br>
-
 ## License
+
 MIT
 
-Copyright (c) 2021-2024  Yasunori Kirimoto
-
-<br>
+Copyright (c) 2021-2025  Yasunori Kirimoto, Kanahiro Iguchi
 
 ---
 
-<br>
-
 ### Japanese
-
-<br>
 
 # maplibre-gl-opacity
 
@@ -208,19 +193,13 @@ maplibre-gl-opacityは、複数のタイルレイヤーを透過するMapLibre G
 [MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js/docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
-<br>
-
 ## 使用方法
 
 ![maplibre-gl-opacity](./img/maplibre-gl-opacity.gif)
 
-<br>
-
 ### デモ
 
 [デモ](https://mug-jp.github.io/maplibre-gl-opacity)
-
-<br>
 
 ### オプション
 
@@ -250,23 +229,21 @@ overLayers: {
 opacityControl: true
 ```
 
-<br>
-
 ### 例
 
 MapLibre GL JSを手軽に始める [MapLibre GL JS, Vite]  
 [maplibregljs-starter](https://github.com/mug-jp/maplibregljs-starter)
 
 パッケージインストール
+
 ```bash
 npm install maplibre-gl-opacity
 ```
 
 main.ts
+
 ```typescript
-import './style.css'
 import 'maplibre-gl/dist/maplibre-gl.css';
-import 'maplibre-gl-opacity/dist/maplibre-gl-opacity.css';
 import maplibregl from 'maplibre-gl';
 
 // module import
@@ -387,11 +364,8 @@ map.on('load', function () {
 });
 ```
 
-<br>
-
 ## ライセンス
+
 MIT
 
-Copyright (c) 2021-2024 Yasunori Kirimoto
-
-<br>
+Copyright (c) 2021-2025 Yasunori Kirimoto, Kanahiro Iguchi
