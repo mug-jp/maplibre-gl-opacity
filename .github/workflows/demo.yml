@@ -9,6 +9,11 @@ on:
             - 'example/**'
     workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
+
 jobs:
     build-deploy:
         runs-on: ubuntu-24.04
