@@ -32,7 +32,7 @@ jobs:
               run: pnpm install
 
             - name: build
-              run: pnpm build
+              run: pnpm build:example
 
             - name: add nojekyll
               run: touch ./demo/.nojekyll
