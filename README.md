@@ -21,10 +21,6 @@ npm install maplibre-gl-opacity
 ```
 
 ```typescript
-import 'maplibre-gl/dist/maplibre-gl.css';
-import maplibregl from 'maplibre-gl';
-
-// module import
 import OpacityControl from 'maplibre-gl-opacity';
 ```
 
@@ -68,12 +64,6 @@ opacityControl: true
 
 Start MapLibre GL JS easily. [MapLibre GL JS, Vite]  
 [maplibregljs-starter](https://github.com/mug-jp/maplibregljs-starter)
-
-Install package
-
-```bash
-npm install maplibre-gl-opacity
-```
 
 main.ts
 
@@ -234,10 +224,6 @@ npm install maplibre-gl-opacity
 ```
 
 ```typescript
-import 'maplibre-gl/dist/maplibre-gl.css';
-import maplibregl from 'maplibre-gl';
-
-// module import
 import OpacityControl from 'maplibre-gl-opacity';
 ```
 
@@ -282,12 +268,6 @@ opacityControl: true
 
 MapLibre GL JSを手軽に始める [MapLibre GL JS, Vite]  
 [maplibregljs-starter](https://github.com/mug-jp/maplibregljs-starter)
-
-パッケージインストール
-
-```bash
-npm install maplibre-gl-opacity
-```
 
 main.ts
 
