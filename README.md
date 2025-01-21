@@ -5,13 +5,37 @@ maplibre-gl-opacity is a MapLibre GL JS plugin that makes multiple tile layers t
 [MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js/docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
-## Usage
-
-![maplibre-gl-opacity](./img/maplibre-gl-opacity.gif)
-
-### Demo
+## Demo
 
 [demo](https://mug-jp.github.io/maplibre-gl-opacity)
+
+
+## Usage
+
+### Install
+
+#### npm module
+
+```sh
+npm install maplibre-gl-opacity
+```
+
+```typescript
+import 'maplibre-gl/dist/maplibre-gl.css';
+import maplibregl from 'maplibre-gl';
+
+// module import
+import OpacityControl from 'maplibre-gl-opacity';
+```
+
+#### via CDN
+
+```html
+<script src="https://www.unpkg.com/maplibre-gl-opacity@1.8.0/build/maplibre-gl-opacity.umd.js"></script>
+<link rel="stylesheet" href="https://www.unpkg.com/maplibre-gl-opacity@1.8.0/build/maplibre-gl-opacity.css"/>
+```
+
+`OpacityControl` is globaly defined.
 
 ### Option
 
@@ -23,7 +47,6 @@ position: 'top-left' or 'top-right' or 'bottom-left' or 'bottom-right'
 
 
 // OpacityControl Option
-
 // Baselayers settings
 baseLayers: {
     m_mono: 'MIERUNE Mono',
@@ -193,13 +216,39 @@ maplibre-gl-opacityは、複数のタイルレイヤーを透過するMapLibre G
 [MapLibre GL JS Plugins](https://maplibre.org/maplibre-gl-js/docs/plugins)  
 [npm](https://www.npmjs.com/package/maplibre-gl-opacity)  
 
+## デモ
+
+[デモ](https://mug-jp.github.io/maplibre-gl-opacity)
+
+
 ## 使用方法
 
 ![maplibre-gl-opacity](./img/maplibre-gl-opacity.gif)
 
-### デモ
+### インストール
 
-[デモ](https://mug-jp.github.io/maplibre-gl-opacity)
+#### npm module
+
+```sh
+npm install maplibre-gl-opacity
+```
+
+```typescript
+import 'maplibre-gl/dist/maplibre-gl.css';
+import maplibregl from 'maplibre-gl';
+
+// module import
+import OpacityControl from 'maplibre-gl-opacity';
+```
+
+#### CDN経由
+
+```html
+<script src="https://www.unpkg.com/maplibre-gl-opacity@1.8.0/build/maplibre-gl-opacity.umd.js"></script>
+<link rel="stylesheet" href="https://www.unpkg.com/maplibre-gl-opacity@1.8.0/build/maplibre-gl-opacity.css"/>
+```
+
+`OpacityControl`がグローバル変数として定義されます。
 
 ### オプション
 
