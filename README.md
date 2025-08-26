@@ -58,6 +58,10 @@ overLayers: {
 
 // Transparent slide bar settings (true or false)
 opacityControl: true
+
+// Whether the current visibility state of the Operational layers should be preserved or not.
+// False by default.
+preserveLayerVisibility: true
 ```
 
 ### Example
@@ -180,6 +184,7 @@ map.on('load', function () {
         baseLayers: mapBaseLayer,
         overLayers: mapOverLayer,
         opacityControl: true,
+        preserveLayerVisibility: true,
     });
     map.addControl(Opacity, 'top-right');
 
@@ -384,6 +389,7 @@ map.on('load', function () {
         baseLayers: mapBaseLayer,
         overLayers: mapOverLayer,
         opacityControl: true,
+        preserveLayerVisibility: true,
     });
     map.addControl(Opacity, 'top-right');
 
