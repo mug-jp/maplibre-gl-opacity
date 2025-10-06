@@ -111,6 +111,7 @@ map.on('load', function () {
         baseLayers: mapBaseLayer,
         overLayers: mapOverLayer,
         opacityControl: true,
+        preserveLayerVisibility: true,
     });
     map.addControl(opacityControl, 'top-right');
 

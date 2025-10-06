@@ -6,6 +6,7 @@ type OpacityControlOptions = {
     baseLayers: Record<string, string>;
     overLayers: Record<string, string>;
     opacityControl: boolean;
+    preserveLayerVisibility: boolean;
 };
 
 // デフォルトオプション設定
@@ -13,6 +14,7 @@ const defaultOptions: OpacityControlOptions = {
     baseLayers: {},
     overLayers: {},
     opacityControl: false,
+    preserveLayerVisibility: false,
 };
 
 class OpacityControl implements IControl {
@@ -21,12 +23,14 @@ class OpacityControl implements IControl {
     #baseLayersOption: Record<string, string>;
     #overLayersOption: Record<string, string>;
     #opacityControlOption: boolean;
+    #preserveLayerVisibility: boolean
 
     constructor(options: Partial<OpacityControlOptions>) {
         // オプション設定
         this.#baseLayersOption = options.baseLayers ?? defaultOptions.baseLayers;
         this.#overLayersOption = options.overLayers ?? defaultOptions.overLayers;
         this.#opacityControlOption = options.opacityControl ?? defaultOptions.opacityControl;
+        this.#preserveLayerVisibility = options.preserveLayerVisibility ?? defaultOptions.preserveLayerVisibility;
     }
 
     // ラジオボタン作成
@@ -75,8 +79,13 @@ class OpacityControl implements IControl {
         const checkBox = document.createElement('input');
         checkBox.setAttribute('type', 'checkbox');
         checkBox.id = layerId;
-        // 全レイヤ非表示
-        this.#map!.setLayoutProperty(layerId, 'visibility', 'none');
+        if(this.#preserveLayerVisibility){
+            // Get the current state & use it to set the state of Check box
+            checkBox.checked = this.#map.getLayoutProperty(layerId, 'visibility');
+        }else {
+            // 全レイヤ非表示
+            this.#map!.setLayoutProperty(layerId, 'visibility', 'none');
+        }
         this.#container!.appendChild(checkBox);
         // チェックボックスイベント
         checkBox.addEventListener('change', (event) => {
