@@ -37,6 +37,7 @@ class OpacityControl implements IControl {
         const radioButton = document.createElement('input');
         radioButton.setAttribute('type', 'radio');
         radioButton.id = layerId;
+        radioButton.name = 'baseLayer';
         // 初期レイヤのみ表示
         if (layerId === initLayer) {
             radioButton.checked = true;
